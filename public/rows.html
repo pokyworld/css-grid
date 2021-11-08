@@ -1,0 +1,68 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rows | CSS Grid</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            color: #eee;
+            text-align: center;
+            font-family: 'Monserrat', sans-serif;
+        }
+
+        #content {
+            display: grid;
+            /* grid-template-columns: 33.334% 33.334% 33.334%; */
+            /* grid-template-columns: 30% 20% 50%; */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            /* grid-template-columns: 3fr 2fr 5fr; */
+            /* grid-template-columns: 1fr 2fr 1fr; */
+            /* grid-template-columns: repeat(3, 1fr); */
+            grid-template-columns: repeat(3, 1fr);
+
+            /* grid-auto-rows: 200px; */
+            /* grid-auto-rows: minmax(100px, auto); */
+
+            /* grid-template-rows: 200px 300px 400px 200px; */
+            /* grid-template-rows: repeat(3, 200px); */
+            /* grid-template-rows: repeat(3, minmax(150px, auto)); */
+
+            /* gap: 10px; */
+            row-gap: 10px;
+            /* column-gap: 10px; */
+
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        #content div {
+            background-color: #3bbced;
+            padding: 30px;
+        }
+
+        #content div:nth-child(even) {
+            background-color: #777;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <div>1</div>
+        <div>2</div>
+        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem tenetur eligendi quis soluta
+            expedita, voluptatum, ipsum error eveniet assumenda debitis est optio, laudantium odit rem facere ut quidem
+            culpa illo.</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+{
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.3.11",
+    "tailwindcss": "^2.2.19"
+  },
+  "name": "css-grid",
+  "version": "1.0.0",
+  "main": "index.html",
+  "dependencies": {},
+  "scripts": {
+    "build": "tailwindcss src/style.css -o public/style.css",
+    "start": "tailwindcss src/style.css -o public/style.css --watch"
+  },
+  "author": "Des Butler",
+  "license": "ISC"
+}
